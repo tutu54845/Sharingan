@@ -8,4 +8,4 @@ bot.on('ready', function() {
     console.log("Connected");
 });
 
-bot.login(".");
+bot.login(config.token);
