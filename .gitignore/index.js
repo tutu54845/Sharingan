@@ -8,4 +8,4 @@ bot.on('ready', function() {
     console.log("Connected");
 });
 
-bot.login("NDAyNjM4Njk5MTcyNTkzNjc0.DjaOOA.K0lh4y0ykfpxhhAoGhoemjR_-hk");
+bot.login(".");
