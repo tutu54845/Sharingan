@@ -1,4 +1,4 @@
-const botconfig = require("./config.json")
+const botconfig = require("./config.env")
 const Discord = require('discord.js');
 
 
