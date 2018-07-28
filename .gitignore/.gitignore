@@ -61,4 +61,4 @@ typings/
 .next
 
 # config.json config file
-config.json
+.config
