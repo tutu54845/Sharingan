@@ -61,4 +61,4 @@ typings/
 .next
 
 # Ignorer le fichier ''config.json'' :
-/sharinganv1/.gitignore/config.json
+sharinganv1/.gitignore/config.json
