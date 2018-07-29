@@ -13,11 +13,6 @@ Client.on('message', message => {
         message.reply("Wesh ma couille)");
         console.log("Commande Salut effetué");
     }
-
-    if (message.content === "sava"){
-        message.reply("Tranquille et toi mon bro)");
-        console.log("Le bot répond à ta question");
-    }
-});
+});   
         
-Client.login("process.env.BOT_TOKEN");
+Client.login(process.env.BOT_TOKEN);
