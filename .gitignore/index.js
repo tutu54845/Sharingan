@@ -9,4 +9,4 @@ bot.on('ready', async {
     console.log("Connected");
 });
 
-bot.login(botconfig.token);
+bot.login(config.token);
