@@ -1,12 +1,21 @@
-const botconfig = require("./config.env")
 const Discord = require('discord.js');
+const client = new Discord.Client();
 
-
-const bot = new Discord.Client({disableEveryone:true})
-
-bot.on('ready', async {
+client.on('ready', () => {
     bot.user.setGame("En cours de développement &help");
     console.log("Connected");
 });
 
-bot.login(botconfig.token);
+client.on('message', message => {
+    
+    if(message.content === "salut"){
+        message.reply("Wesh ma couille");
+        console.log("Le bot dit Salut");
+    }
+    if(message.content === "sava"){
+        message.reply("Tranquille et toi mon bro");
+        console.log("Le bot répond à ta question");
+    }
+});
+
+client.login(process.env.BOT_TOKEN);
