@@ -14,6 +14,9 @@ client.on('message', message => {
         message.reply("Tranquille et toi mon bro");
         console.log("Le bot répond à ta question");
     }
+     if(message.content === prefix + "help"){
+        message.channel.sendMessage("Liste des commandes: \n -&help"
+    }
 });
 
 client.login(process.env.BOT_TOKEN);
