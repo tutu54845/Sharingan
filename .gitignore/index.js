@@ -20,15 +20,8 @@ client.on('message', message => {
         console.log("Le bot répond à ta question");
     }
     if(message.content === prefix + "help"){
-        var help_embed = new Discord.RichEmbed()
-        .setColor("#40A497")
-        .setTitle("Voici les commandes du bot sharinganv1")
-        .setDescription("cette commande est le menu du bot")
-        .addField("&help,"Affiche les commandes du bot !")
-        .setFooter("Menu d'aide")
-        message.channel.sendMessage("help_embed");
-        console.log("Un utilisteur à effectué la commade d'aide !!")
-     }
+            message.channel.sendMessage("Liste des commandes: \n -&help")
+    }
  });
 
 client.login(process.env.BOT_TOKEN);
