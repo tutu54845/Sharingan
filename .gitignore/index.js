@@ -21,15 +21,7 @@ client.on('message', message => {
     }
     
     if(message.content === prefix + "help"){
-       var help_embed = new Discord.RichEmbed()
-       .setColor("#40A497")
-       .setTitle("Voici mes commandes d'aide")
-       .setDescription("Je suis un bot voici mes commandes disponible")
-       .addField("&help", "Affiche les commandes !"
-       .addField("Bonjour", "Le bot répond !")
-       .setFooter("Menu d'aide")
-       message.channel.sendMessage(help_embed);
-       console.log("Un utilisteur a effectué la commade d'aide !")
+        message.channel.sendMessage("Liste des commandes: \n -&help"
     }
  });
 
