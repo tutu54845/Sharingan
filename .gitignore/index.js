@@ -21,7 +21,7 @@ client.on('message', message => {
     }
     
     if(message.content === prefix + "help"){
-       var help_embed = new Discord.RichEmed()
+       var help_embed = new Discord.RichEmbed()
        .setColor("#40A497")
        .setTitle("Voici mes commandes d'aide")
        .setDescription("Je suis un bot voici mes commandes disponible")
