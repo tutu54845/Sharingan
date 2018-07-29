@@ -19,7 +19,7 @@ client.on('message', message => {
         message.reply("Tranquille et toi mon bro");
         console.log("Le bot répond à ta question");
     }
-    if(message.content === prefix + "&help"){
+    if(message.content === prefix + "help"){
     var help_embed = new Discord.RichEmed()
     .setColor("#40A497")
     .setTitle("Voici mes commandes d'aide")
