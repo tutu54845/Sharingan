@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const Client = new Discord.Client();
 
-var prefix = ("&")
+var prefix = "&";
 
 Client.on('ready', function() {
     Client.user.setGame("😎Command : &help😎");
