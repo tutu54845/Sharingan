@@ -26,7 +26,7 @@ client.on('message', message => {
         .setDescription("cette commande est le menu du bot")
         .addField("&help,"Affiche les commandes du bot !")
         .setFooter("Menu d'aide")
-        message.channel.sendMessage(help_embed);
+        message.channel.sendMessage("help_embed");
         console.log("Un utilisteur à effectué la commade d'aide !!")
      }
  });
