@@ -22,11 +22,6 @@ Client.on('message', message => {
         message.reply("Tranquille et toi mon bro)");
         console.log("Le bot répond à ta question");
     }
- 
-Client.on('guildMemberAdd', function (message) {
-    member.createDM().then(function (channel) {
-     cheannel.send('Bienvenue sur le discord' +_member.displayName)
-
 });
         
 Client.login(process.env.BOT_TOKEN);
