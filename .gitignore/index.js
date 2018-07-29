@@ -28,7 +28,7 @@ client.on('message', message => {
         .setFooter("Menu d'aide")
         message.channel.sendMessage(help_embed);
         console.log("Un utilisteur à effectué la commade d'aide !!")
-        }
+     }
  });
 
 client.login(process.env.BOT_TOKEN);
