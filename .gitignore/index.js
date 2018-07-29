@@ -8,11 +8,11 @@ client.on('ready', () => {
 
 client.on('message', message => {
     
-    if(message.content === "salut"){
+    if(message.content == "salut"){
         message.reply("Wesh ma couille");
         console.log("Le bot dit Salut");
     }
-    if(message.content === "sava"){
+    if(message.content == "sava"){
         message.reply("Tranquille et toi mon bro");
         console.log("Le bot répond à ta question");
     }
