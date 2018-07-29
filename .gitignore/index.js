@@ -1,13 +1,13 @@
+// INDEX.JS //
+
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
 client.on('ready', () => {
-    bot.user.setGame("En cours de développement &help");
-    console.log("Connected");
+    console.log('Connected!');
 });
 
 client.on('message', message => {
-    
     if(message.content === "salut"){
         message.reply("Wesh ma couille");
         console.log("Le bot dit Salut");
