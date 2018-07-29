@@ -21,9 +21,9 @@ Client.on('message', message => {
     if (message.content === "sava"){
         message.reply("Tranquille et toi mon bro)");
         console.log("Le bot répond à ta question");
-    });
+    }
 
-    Client.on('message', message => {
+Client.on('message', message => {
 
   if (message.content.startsWith('&play')) {
     // On récupère le premier channel audio du serveur
@@ -42,15 +42,14 @@ Client.on('message', message => {
         stream.on('error', function () {
           message.reply("Je n'ai pas réussi à lire cette vidéo :(")
           connection.disconnect()
-        })
+        }
         // On envoie le stream au channel audio
         // Il faudrait ici éviter les superpositions (envoie de plusieurs vidéo en même temps)
         connection
           .playStream(stream)
           .on('end', function () {
             connection.disconnect()
-          })
-      })
+          }
  });
         
 Client.login(process.env.BOT_TOKEN);
