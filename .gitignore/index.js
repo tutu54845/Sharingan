@@ -4,12 +4,12 @@ const Client = new Discord.Client();
 var prefix = "&";
 
 Client.on('ready', function() {
-    Client.user.setGame("😎Command : &help😎");
+    Client.user.setGame("&help");
     console.log("Connected");
 });
 
 Client.on('message', message => {
-  if (message.content === prefix + "help"){
+  if (message.content === prefix + "help|Développement en cours!"){
       message.channel.sendMessage("Liste des commandes: \n - &help \n - &creatediscord \n - &play");
   }
   if (message.content === prefix + "creatediscord"){
