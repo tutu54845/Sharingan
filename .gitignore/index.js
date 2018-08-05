@@ -9,7 +9,7 @@ Client.on('ready', function() {
 });
 
 Client.on('message', message => {
-  if (message.content === prefix + "help|Développement en cours!"){
+  if (message.content === prefix + "&help|Développement en cours!"){
       message.channel.sendMessage("Liste des commandes: \n - &help \n - &creatediscord \n - &play");
   }
   if (message.content === prefix + "creatediscord"){
