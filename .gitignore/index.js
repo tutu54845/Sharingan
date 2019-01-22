@@ -1,5 +1,6 @@
 const Discord = require('discord.js');
 const Client = new Discord.Client();
+const token = process.env.BOT_TOKEN;
 
 var prefix = "&";
 
@@ -24,4 +25,4 @@ Client.on('message', message => {
     }
 });
         
-Client.login(process.env.BOT_TOKEN);
+
