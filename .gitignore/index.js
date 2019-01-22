@@ -4,7 +4,7 @@ const Client = new Discord.Client();
 var prefix = "&";
 
 Client.on('ready', function() {
-    Client.user.setGame("ðŸ˜ŽCommand : &helpðŸ˜Ž");
+    Client.user.setGame("Command : &help");
     console.log("Connected");
 });
 
