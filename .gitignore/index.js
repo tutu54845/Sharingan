@@ -5,7 +5,7 @@ var bot = new discord.Client();
 var prefix = "&";
 
 Client.on('ready', function() {
-    Client.user.setGame("Développement en cours");
+    Client.user.setGame("Développement en cours !!!");
     console.log("Connected");
 });
 
