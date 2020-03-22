@@ -1,5 +1,6 @@
-const Discord = require('discord.js');
-const Client = new Discord.Client();
+var Discord = require('discord.js');
+
+var bot = new discord.Client();
 
 var prefix = "&";
 
@@ -13,9 +14,9 @@ Client.on('message', message => {
         message.channel.sendMessage("Liste des commandes: \n - &help");
     }
     
-    if (message.content === "salut"){
+    if (message.content === "yo"){
         message.reply("Wesh ma couille)");
-        console.log("Commande Salut");
+        console.log("Le bot dit Yo");
     }
 
     if (message.content === "sava"){
